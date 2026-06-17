@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#12080b" />
+  <meta name="description" content="Annalisa e Angelo annunciano il loro matrimonio - 26 settembre 2026" />
+  <meta property="og:title" content="Annalisa & Angelo - Annuncio di Matrimonio" />
+  <meta property="og:description" content="26 settembre 2026 · ore 10:30" />
+  <meta property="og:image" content="assets/invito.png" />
+  <title>Annalisa & Angelo · Annuncio di Matrimonio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora"></div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+
+  <main class="experience" id="top">
+    <section class="hero" id="hero">
+      <div class="cinema-line top"></div>
+      <div class="cinema-line bottom"></div>
+
+      <div class="hero-content">
+        <p class="kicker">Annuncio di Matrimonio</p>
+        <h1><span>Annalisa</span><em>&</em><span>Angelo</span></h1>
+        <p class="date-line">26 settembre 2026 · ore 10:30</p>
+        <button class="open-btn" id="openBtn" type="button" aria-label="Apri l'invito">
+          <span>Apri l’invito</span>
+        </button>
+        <p class="hint">tocca la busta</p>
+      </div>
+
+      <div class="floating-flower f1"></div>
+      <div class="floating-flower f2"></div>
+      <div class="floating-flower f3"></div>
+    </section>
+
+    <section class="reveal" id="reveal" aria-label="Invito di matrimonio">
+      <div class="spotlight"></div>
+
+      <div class="envelope-stage" id="envelopeStage">
+        <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Apri la busta">
+          <div class="env-shadow"></div>
+          <div class="env-back"></div>
+          <div class="env-card-preview">
+            <div class="mini-kicker">Annalisa & Angelo</div>
+            <div class="mini-line"></div>
+            <div class="mini-text">26.09.2026</div>
+          </div>
+          <div class="env-left"></div>
+          <div class="env-right"></div>
+          <div class="env-bottom"></div>
+          <div class="env-flap"></div>
+          <div class="seal">A&A</div>
+        </div>
+      </div>
+
+      <article class="invitation-card" id="invitationCard">
+        <div class="card-glow"></div>
+        <div class="title-block">
+          <p class="kicker dark">Con grande gioia</p>
+          <h2>Annalisa <span>&</span> Angelo</h2>
+          <p class="subtitle">annunciano il loro matrimonio</p>
+        </div>
+
+        <div class="premium-invite-wrap">
+          <img src="assets/invito.png" alt="Invito matrimonio Annalisa e Angelo" class="invite-img" />
+        </div>
+
+        <div class="countdown" id="countdown" aria-label="Countdown al matrimonio">
+          <div><strong id="days">0</strong><span>Giorni</span></div>
+          <div><strong id="hours">0</strong><span>Ore</span></div>
+          <div><strong id="minutes">0</strong><span>Minuti</span></div>
+          <div><strong id="seconds">0</strong><span>Secondi</span></div>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-box">
+            <span class="icon">💒</span>
+            <h3>Cerimonia</h3>
+            <p>Chiesa Madre Maria SS. Assunta<br>San Fratello (ME)</p>
+            <a class="premium-link" href="https://www.google.com/maps/search/?api=1&query=Chiesa%20Madre%20Maria%20SS.%20Assunta%20San%20Fratello%20ME" target="_blank" rel="noopener">Apri Maps</a>
+          </div>
+          <div class="detail-box">
+            <span class="icon">🥂</span>
+            <h3>Ricevimento</h3>
+            <p>Paradiso Sala Ricevimenti<br>Via Faro, 3 · Milazzo (ME)</p>
+            <a class="premium-link" href="https://www.google.com/maps/search/?api=1&query=Paradiso%20Sala%20Ricevimenti%20Via%20Faro%203%20Milazzo%20ME" target="_blank" rel="noopener">Apri Maps</a>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="cta primary" href="tel:3884528323">Chiama Annalisa</a>
+          <a class="cta secondary" href="tel:3486987415">Chiama Angelo</a>
+        </div>
+
+        <footer class="credits">
+          Powered by <a href="https://www.instagram.com/_antomirenda_/" target="_blank" rel="noopener">Antonino Mirenda</a>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <button class="mute" id="muteBtn" type="button" aria-label="Attiva o disattiva audio">♪</button>
+  <script src="script.js"></script>
+</body>
+</html>
